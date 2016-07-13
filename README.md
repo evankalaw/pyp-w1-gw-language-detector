@@ -1,6 +1,6 @@
 # [pyp-w1] Language Detector
 
-You will need to build a program that is able to detect the language of certain piece of text given by the user. For that you will need to respect the following interface:
+This is a program that is able to detect the language of certain piece of text given by the user. Provided with the program is compatibility for Spanish, German, and English. This is what the interface looks like:
 
 ```python
 >>> from .languages import LANGUAGES
@@ -24,10 +24,11 @@ la Liga de Campeones (cinco) y en más temporadas de la Liga de Campeones (cinco
 'Spanish'
 ```
 
-Language detection is not magic. It's just a matter of counting how many of the most common words in a language are included in certain text. If given text contains words of different languages, the detector should return the language that contain most words in given text.
+The most common words in every language are counted in order to find the return value, which is the determined language. If given text contains words of different languages, the detector returns the language that contain most words in given text.
 
-You are responsible of defining the set of the most used words in each of the languages you want to support. As a requirement of this group work, we ask you to support at least 3 languages, including: english, spanish and german.
-
-**Ideas for enhancements in case of extra time:**
-- Solve with regexes (adjusting and/or adding tests might be needed for this)
-- Stats (What word is most common, percentage of languages etc etc)
+- Split function used in order to make user's input into a working list. 
+- List then compared to the various lists in the dictionary of languages. The current language name and list of words are      accessed with every iteration
+- A for loop checks for any intersections between the two lists, language by language.
+- Checks for the highest amount of words - max is set initially to the count of the the first language. 
+- When a new max is found, the global variable that holds the new highest language is modified.
+- The language with the highest count of words is returned.
