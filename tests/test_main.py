@@ -1,8 +1,15 @@
 # -*- coding: utf-8 -*-
 import unittest
 
-from language_detector import detect_language, LANGUAGES
+#import detect_language
+#from language_detector import LANGUAGES
+import sys 
 
+sys.path.append('/home/ubuntu/workspace/language_detector')
+sys.path.append('/home/ubuntu/workspace/')
+#print ("\n".join(sys.path))
+
+from language_detector import detect_language, LANGUAGES
 
 class TestLanguageDetector(unittest.TestCase):
 
@@ -70,3 +77,5 @@ class TestLanguageDetector(unittest.TestCase):
     def test_detect_language_german_with_module_language_specification(self):
         result = detect_language(self.texts["german"], LANGUAGES)
         self.assertEqual(result.lower(), 'german')
+        
+ 
