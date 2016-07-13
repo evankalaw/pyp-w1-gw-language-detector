@@ -1,6 +1,6 @@
 """This is the entry point of the program."""
 # -*- coding: utf-8 -*-
-from languages import LANGUAGES
+from .languages import LANGUAGES`
 
 
 
