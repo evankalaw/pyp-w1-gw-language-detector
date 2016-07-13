@@ -22,6 +22,18 @@ LANGUAGES = [
                     'dich', 'war', 'haben', 'für', 'an', 'habe', 'da', 'nein',
                     'bin', 'noch', 'dir', 'uns', 'sich', 'nur',
                     'einen', 'kann', 'dem']
+    },
+    {
+        'name': 'English',
+            'common_words': [
+                    'the', 'be', 'to', 'of', 'and', 'a', 'in', 'that', 'have',
+                    'I', 'it', 'for', 'not', 'on', 'with', 'he', 'she', 'as', 'you'
+                    'do', 'at', 'this', 'but', 'his', 'by', 'from', 'they', 'we', 
+                    'say', 'her', 'or', 'an', 'will', 'my', 'one', 'all', 'would',
+                    'their', 'there', 'what', 'so', 'up', 'out', 'if', 'about', 'who',
+                    'get', 'which', 'go', 'me', 'when', 'make', 'can', 'like', 'your'
+                    "you're", 'them', 'other', 'see'
+            ]
     }
     #  include your extra languages here
 ]
